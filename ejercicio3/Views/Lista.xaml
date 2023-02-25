@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ejercicio3.Views.Lista">
+
+    <ContentPage.ToolbarItems >
+        <ToolbarItem Text="INSERTAR" x:Name="Insertar" Clicked="Insertar_Clicked"/>
+        <ToolbarItem Text="actualizar" x:Name="ACTUAALIZAR" Clicked="ACTUAALIZAR_Clicked"/>
+
+
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label 
+                Text="DATOS" 
+                HorizontalTextAlignment="Center" 
+                TextColor="White" 
+                FontSize="36"/>
+            </Frame>
+            <StackLayout>
+                <CollectionView
+                    x:Name="txtLista"
+                    SelectionMode="Single"
+                    Margin="10"
+                    SelectionChanged="txtLista_SelectionChanged">
+
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout
+                            Orientation="Vertical"
+                            ItemSpacing="15"/>
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout 
+                                    Orientation="Horizontal" 
+                                    HorizontalOptions="FillAndExpand"
+                                    Margin="20, 10, 20, 0" 
+                                    Padding="5">
+                                <Label 
+                                    Text="{Binding Id}" 
+                                    HorizontalOptions="StartAndExpand" 
+                                    TextColor="Black" 
+                                    FontAttributes="Bold"/>
+                                <Label 
+                                    Text="{Binding nombre}" 
+                                    HorizontalOptions="StartAndExpand"/>
+                                <Label 
+                                     Text="{Binding apellido}" 
+                                     HorizontalOptions="StartAndExpand"/>
+                                <Label 
+                                     Text="{Binding correo}" 
+                                     HorizontalOptions="StartAndExpand"/>
+                                <Label 
+                                     Text="{Binding correo}" 
+                                     HorizontalOptions="StartAndExpand"/>
+                                
+                                
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

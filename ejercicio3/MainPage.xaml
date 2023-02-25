@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ejercicio3.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="OrangeRed" Padding="24" CornerRadius="0">
+            <Label Text="Ejercicio 1.2" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="nombre" FontSize="Title" Padding="0,0,0,0"/>
+        <Entry x:Name="nombre" Placeholder="ingrese nombre" Keyboard="Text" Margin="5,0,5,0"/>
+        <Label Text="apellido" FontSize="Title" Padding="0,0,0,0"/>
+        <Entry x:Name="apellido" Placeholder="ingrese aepllido" Keyboard="Text"/>
+        <Label Text="edad" FontSize="Title" Padding="0,0,0,0"/>
+        <Entry x:Name="edad" Placeholder="ingrese edad" Keyboard="Numeric"/>
+        <Label Text="correo" FontSize="Title" Padding="0,0,0,0"/>
+        <Entry x:Name="correo" Placeholder="ingrese correo" Keyboard="Text"/>
+    <!--<Label Text="direccion" FontSize="Title" Padding="0,0,0,0"/>
+        <Entry x:Name="direccion" Placeholder="ingrese direccion" Keyboard="Text"/>-->
+
+       <!-- <Button x:Name="btnagregar" Text="AGREGAR" Clicked="btnagregar_Clicked" BackgroundColor="AliceBlue"/>-->
+       <!-- <Button x:Name="lista" Text="ver lista" Clicked="lista_Clicked" BackgroundColor="AliceBlue"/>-->
+
+        <Button x:Name="TERCERA" Text="Enviar informacion" Clicked="TERCERA_Clicked" BackgroundColor="AliceBlue"/>
+
+
+    </StackLayout>
+
+</ContentPage>
